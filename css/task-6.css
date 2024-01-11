@@ -50,7 +50,7 @@ button:last-of-type:hover {
 }
 #boxes {
   display: flex;
-  width: 486px;
+  max-width: 120vh;
   padding: 32px;
   align-items: flex-start;
   justify-content: flex-start;
