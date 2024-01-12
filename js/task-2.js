@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -27,10 +27,12 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-for (const image of images) {
-  const addItem = document.createElement("img");
-  addItem.src = image.url;
-  addItem.alt = image.alt;
-  addItem.width = "360";
-  gallery.append(addItem);
-}
+
+const markup = images
+  .map(
+    (image) =>
+      `<li><img src="${image.url}" alt="${image.alt}" width="360" height="280"></li>`
+  )
+  .join("");
+
+gallery.insertAdjacentHTML("beforeend", markup);

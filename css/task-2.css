@@ -4,4 +4,7 @@
   row-gap: 48px;
   column-gap: 24px;
   width: 1440px;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }

@@ -1,6 +1,6 @@
 "use strict";
 const categories = document.querySelectorAll(".item");
-console.log(`Nomber of categories: ${categories.length}`);
+console.log(`Number of categories: ${categories.length}`);
 
 categories.forEach((items, index) => {
   const title = items.firstElementChild;
